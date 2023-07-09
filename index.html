@@ -111,8 +111,6 @@
                             break
                         ```
 
-                        <!-- <small>Find these files in <a href="https://github.com/MakisH/ofw16-training/generator-propagator">https://github.com/MakisH/ofw16-training/generator-propagator</a>.</small> -->
-
                         vvv
 
                         ## propagator.py
@@ -152,11 +150,11 @@
                 
                 <section>
                     <section>
-                        <p><a href="https://github.com/MakisH/ofw16-training/blob/master/videos/generator-propagator-uncoupled.mp4"><video data-autoplay src="videos/generator-propagator-uncoupled.mp4"></video></a></p>
+                        <p><a href="https://github.com/MakisH/ofw18-training/blob/master/videos/generator-propagator-uncoupled.mp4"><video data-autoplay src="videos/generator-propagator-uncoupled.mp4"></video></a></p>
                     </section>
                     <section>
                         <h2>Uncoupled simulation</h2>
-                        <p><a href="https://github.com/MakisH/ofw16-training/blob/master/videos/propagator_constant.webm"><video data-autoplay src="videos/propagator_constant.webm"></video></a></p>
+                        <p><a href="https://github.com/MakisH/ofw18-training/blob/master/videos/propagator_constant.webm"><video data-autoplay src="videos/propagator_constant.webm"></video></a></p>
                     </section>
                 </section>
                 
@@ -591,12 +589,12 @@
                 <section>
                 <section>Not there yet, but let's run it<br/><small>(similar changes in <tt>propagator.py</tt> - try it at home)</small></section>
                 <section>
-                  <p><a href="https://github.com/MakisH/ofw16-training/blob/master/videos/generator-propagator-steering.mp4"><video data-autoplay
+                  <p><a href="https://github.com/MakisH/ofw18-training/blob/master/videos/generator-propagator-steering.mp4"><video data-autoplay
                         src="videos/generator-propagator-steering.mp4"></video></a></p>
                 </section>
                 <section>
                     <h2>Nothing happening?</h2>
-                    <p><a href="https://github.com/MakisH/ofw16-training/blob/master/videos/propagator_constant.webm"><video data-autoplay src="videos/propagator_constant.webm"></video></a></p>
+                    <p><a href="https://github.com/MakisH/ofw18-training/blob/master/videos/propagator_constant.webm"><video data-autoplay src="videos/propagator_constant.webm"></video></a></p>
                     <small>Did we forget something?</small>
                 </section>
                 </section>
@@ -719,12 +717,12 @@
                 <section>
                 <section>It should work now!</small></section>
                 <section>
-                  <p><a href="https://github.com/MakisH/ofw16-training/blob/master/videos/generator-propagator-uncoupled.mp4"><video
+                  <p><a href="https://github.com/MakisH/ofw18-training/blob/master/videos/generator-propagator-uncoupled.mp4"><video
                         data-autoplay src="videos/generator-propagator-coupled.mp4"></video></a></p>
                 </section>
                 <section>
                     <h2>Data is being transfered!</h2>
-                    <p><a href="https://github.com/MakisH/ofw16-training/blob/master/videos/propagator_coupled.webm"><video data-autoplay src="videos/propagator_coupled.webm"></video></a></p>
+                    <p><a href="https://github.com/MakisH/ofw18-training/blob/master/videos/propagator_coupled.webm"><video data-autoplay src="videos/propagator_coupled.webm"></video></a></p>
                     <small>Most basic case: uni-directional, serial-explicit, nearest-neighbor mapping, ...</small>
                 </section>
                 
@@ -741,53 +739,9 @@
                       <img src="images/level1/config-original.png" alt="Visual representation of the precice-config.xml"/>
                       <small>Visual representation of precice-config.xml using the <a href="https://precice.org/tooling-config-visualization.html" title="preCICE config visualizer">config visualizer</a>.</small>
                     </section>
-                    <!-- <section>
-                    <small><a href="https://github.com/MakisH/ofw16-training/blob/master/generator-propagator/skeleton/precice-config.xml"><tt>precice-config.xml</tt></a>:</small>
-                    <pre><code class="language-xml" data-trim data-line-numbers="2|4|6-12|14-17|19-26|19,22-24,26|28|30-36">
-                        &lt;precice-configuration&gt;
-                          &lt;solver-interface dimensions="2"&gt;
-
-                          &lt;data:scalar name="Data"/&gt;
-
-                          &lt;mesh name="Generator-Mesh"&gt;
-                            &lt;use-data name="Data"/&gt;
-                          &lt;/mesh&gt;
-
-                          &lt;mesh name="Propagator-Mesh"&gt;
-                            &lt;use-data name="Data" /&gt;
-                          &lt;/mesh&gt;
-                          
-                          &lt;participant name="Generator"&gt;
-                            &lt;use-mesh name="Generator-Mesh" provide="yes"/&gt;
-                            &lt;write-data name="Data" mesh="Generator-Mesh"/&gt;
-                          &lt;/participant&gt;
-
-                          &lt;participant name="Propagator"&gt;
-                            &lt;use-mesh name="Generator-Mesh" from="Generator"/&gt;
-                            &lt;use-mesh name="Propagator-Mesh" provide="yes"/&gt;
-                            &lt;mapping:nearest-neighbor direction="read"
-                              from="Generator-Mesh" to="Propagator-Mesh"
-                              constraint="consistent"/&gt;
-                            &lt;read-data name="Data" mesh="Propagator-Mesh" /&gt;
-                          &lt;/participant&gt;    
-
-                          &lt;m2n:sockets from="Generator" to="Propagator" exchange-directory=".."/&gt;
-
-                          &lt;coupling-scheme:serial-explicit&gt;
-                            &lt;participants first="Generator" second="Propagator"/&gt;
-                            &lt;time-window-size value="0.01"/&gt;
-                            &lt;max-time value="0.1"/&gt;
-                            &lt;exchange data="Data" mesh="Generator-Mesh"
-                              from="Generator" to="Propagator"/&gt;
-                          &lt;/coupling-scheme:serial-explicit&gt;
-                          
-                          &lt;/solver-interface&gt;
-                        &lt;/precice-configuration&gt;
-                    </code></pre>
-                </section> -->
                 </section>
                 
-                <!-- Level 3: OpenFOAM + deal.II -->
+                <!-- OpenFOAM + CalculiX -->
                 <section data-markdown="sections/level3.md" data-separator-vertical="vvv"></section>
                 
                 <section>
