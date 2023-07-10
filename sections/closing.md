@@ -27,8 +27,8 @@ vvv
 # Summary
 
 <div style="color:#0065BD; margin-top:10pt; margin-bottom:10pt;">
-  Both for developers and for users,<br/>
-  many efficient algorithms to choose from via just config
+  1. Both for developers and for users<br/>
+  2. Many efficient algorithms are one setting away
 </div>
 
 <div>
