@@ -64,6 +64,19 @@ vvv
 
 ## Arbitrary solver combinations
 
+| FLUID             | SOLID                  |
+| ---               | ---                    |
+| pimpleFoam        | CalculiX               |
+| SU2               | deal.II                |
+| Nutils            | FEniCS                 |
+|                   | DUNE                   |
+|                   | solidDisplacementFoam  |
+|                   | solids4Foam            |
+
+vvv
+
+## Arbitrary solver combinations
+
 <img src="images/level3/perpendicular-flap-comparison.png" style="max-height:400px;"/>
 
 <small>Note: SU2 models a compressible fluid, OpenFOAM and Nutils an incompressible one.</small>
